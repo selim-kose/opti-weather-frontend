@@ -14,6 +14,6 @@ export class WeatherServiceService {
 
 
   getForecast(): Observable<Forecast> {
-    return this.httpClient.get<Forecast>(`${this.baseUrl}/get`);
+    return this.httpClient.get<Forecast>(`${this.baseUrl}/getforecast`);
   }
 }
