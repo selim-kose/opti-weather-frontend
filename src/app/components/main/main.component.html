@@ -1,0 +1,17 @@
+<div *ngIf="forecast">
+   <div class="container-table">
+      <h3 class="test">Liljeholmens mest optimala väder har försätts av:<span> {{forecast.weatherServiceName}}</span></h3>
+      <table>
+         <tr>
+            <th style="width: 50%;">Tidpunkt</th>
+            <th style="width: 30%;">Temperatur</th>
+            <th style="width: 30%;">Luftfuktighet</th>
+         </tr>
+         <tr>
+            <td>{{forecast.timeStamp}}</td>
+            <td>{{forecast.temp}}</td>
+            <td>{{forecast.rh}}</td>
+         </tr>
+      </table>
+   </div>
+</div>
